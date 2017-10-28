@@ -80,7 +80,7 @@ atom-text-editor {
     color: @syntax-selection-text-color;
 
     &.syntax--css {
-      color: @syntax-invisible-character-color;
+      color: @light-text;
     }
   }
 }
@@ -92,9 +92,12 @@ atom-text-editor {
 .syntax--constant {
   color: @syntax-selection-text-color;
 
-  &.syntax--css {
-    color: @syntax-invisible-character-color;
+  &.syntax--font-name {
+      &.syntax--css {
+        color: @light-text;
+      }
   }
+
 
   &.syntax--character.syntax--escape {
     color: @syntax-selection-text-color;
@@ -102,19 +105,21 @@ atom-text-editor {
 
   &.syntax--numeric {
     color: @syntax-selection-text-color;
+
     &.syntax--js {
       color: @syntax-text-color;
     }
 
     &.syntax--css {
-      color: @syntax-invisible-character-color;
+      color: @light-text;
     }
   }
 
   &.syntax--other.syntax--color {
     color: @syntax-selection-text-color;
+
     &.syntax--css {
-      color: @syntax-invisible-character-color;
+      color: @light-text;
     }
   }
 
@@ -131,7 +136,7 @@ atom-text-editor {
   }
 
   &.syntax--parameter.syntax--function {
-    color: @syntax-text-color;
+    color: @light-text;
   }
 }
 
@@ -196,7 +201,12 @@ atom-text-editor {
 
 &.syntax--css {
   color: @syntax-text-color;
+
+  &.syntax--property-value {
+    color: @light-text;
+  }
 }
+
 
 .syntax--support {
   &.syntax--class {
@@ -207,11 +217,11 @@ atom-text-editor {
     color: @syntax-text-color;
 
     &.syntax--css {
-      color: @syntax-invisible-character-color;
+      color: @light-text
     }
 
     &.syntax--url {
-      color: @syntax-selection-text-color;
+      // color: @syntax-selection-text-color;
     }
 
     &.syntax--any-method {
@@ -241,44 +251,39 @@ atom-text-editor {
   }
 
   &.syntax--name.syntax--tag {
-    color: @syntax-text-color;
+    color: @light-text;
     text-decoration: none;
   }
-
 
   &.syntax--punctuation.syntax--html {
     color: @syntax-invisible-character-color;
   }
 
   &.syntax--tag.syntax--html {
-    color: @syntax-invisible-character-color;
+    color: @light-text;
   }
 
   &.syntax--name.syntax--html {
-    color: @syntax-invisible-character-color;
+    // color: @syntax-invisible-character-color;
   }
-
-  &.syntax--text.syntax--html {
-    color: @syntax-text-color;
-  }
-
 
   &.syntax--other.syntax--attribute-name {
     color: @syntax-selection-text-color;
 
-    &.syntax--css {
-      color: @syntax-invisible-character-color;
-
-    }
-
     &.syntax--id {
       color: @syntax-selection-text-color;
+    }
+
+    &.syntax--pseudo-element {
+
+      &.syntax--css {
+        color: @light-text;
+      }
     }
   }
 
   &.syntax--tag.syntax--css {
-    color: @syntax-invisible-character-color;
-  // color:   @syntax-cursor-color;
+    color: @light-text;
   }
 
 }
@@ -307,7 +312,7 @@ atom-text-editor {
 
 
   .syntax--attribute-value.syntax--css {
-    color: @syntax-invisible-character-color;
+    color: @light-text;
   }
 }
 
@@ -392,4 +397,12 @@ atom-text-editor .line[class*="highlight-line-multi-line-dotted-top"] {
 atom-text-editor .line[class*="highlight-line-multi-line-dotted-bottom"] {
   border-bottom-color: @syntax-attention-color;
   border-top-color: @syntax-attention-color;
+}
+
+.syntax--text.syntax--html {
+  color: @syntax-text-color;
+
+  &.syntax-basic {
+    color: @syntax-invisible-character-color
+  }
 }
