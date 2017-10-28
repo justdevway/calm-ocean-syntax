@@ -1,13 +1,13 @@
 {
-  "name": "arts-blick-syntax",
+  "name": "calm-ocean-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "The syntax that protect your eyes",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/arts-blick-syntax",
+  "repository": "https://github.com/arts8/calm-ocean-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
