@@ -3,7 +3,6 @@
 atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
-  // color: lighten(@syntax-text-color, 15%);
 
 
   .indent-guide {
@@ -69,7 +68,7 @@ atom-text-editor {
   &.syntax--operator {
     color: @syntax-text-color;
     &.syntax--css {
-      color: lighten(@syntax-text-color, 10%);
+      color: @syntax-invisible-character-color;
     }
   }
 
@@ -81,7 +80,7 @@ atom-text-editor {
     color: @syntax-selection-text-color;
 
     &.syntax--css {
-      color: lighten(@syntax-text-color, 10%);
+      color: @syntax-invisible-character-color;
     }
   }
 }
@@ -94,7 +93,7 @@ atom-text-editor {
   color: @syntax-selection-text-color;
 
   &.syntax--css {
-    color: lighten(@syntax-text-color, 10%);
+    color: @syntax-invisible-character-color;
   }
 
   &.syntax--character.syntax--escape {
@@ -108,14 +107,14 @@ atom-text-editor {
     }
 
     &.syntax--css {
-      color: lighten(@syntax-text-color, 10%);
+      color: @syntax-invisible-character-color;
     }
   }
 
   &.syntax--other.syntax--color {
     color: @syntax-selection-text-color;
     &.syntax--css {
-      color: lighten(@syntax-text-color, 10%);
+      color: @syntax-invisible-character-color;
     }
   }
 
@@ -208,7 +207,7 @@ atom-text-editor {
     color: @syntax-text-color;
 
     &.syntax--css {
-      color: lighten(@syntax-text-color, 10%);
+      color: @syntax-invisible-character-color;
     }
 
     &.syntax--url {
@@ -248,15 +247,15 @@ atom-text-editor {
 
 
   &.syntax--punctuation.syntax--html {
-    color: lighten(@syntax-text-color, 10%);
+    color: @syntax-invisible-character-color;
   }
 
   &.syntax--tag.syntax--html {
-    color: lighten(@syntax-text-color, 10%);
+    color: @syntax-invisible-character-color;
   }
 
   &.syntax--name.syntax--html {
-    color: lighten(@syntax-text-color, 10%);
+    color: @syntax-invisible-character-color;
   }
 
   &.syntax--text.syntax--html {
@@ -268,7 +267,7 @@ atom-text-editor {
     color: @syntax-selection-text-color;
 
     &.syntax--css {
-      color: lighten(@syntax-text-color, 10%);
+      color: @syntax-invisible-character-color;
 
     }
 
@@ -278,7 +277,7 @@ atom-text-editor {
   }
 
   &.syntax--tag.syntax--css {
-    color: lighten(@syntax-text-color, 10%);
+    color: @syntax-invisible-character-color;
   // color:   @syntax-cursor-color;
   }
 
@@ -308,7 +307,7 @@ atom-text-editor {
 
 
   .syntax--attribute-value.syntax--css {
-    color: lighten(@syntax-text-color, 10%);
+    color: @syntax-invisible-character-color;
   }
 }
 
