@@ -7,7 +7,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/arts8/calm-ocean-syntax",
+  "repository": "https://github.com/robotas119/calm-ocean-syntax.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
